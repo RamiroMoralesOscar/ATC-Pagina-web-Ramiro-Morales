@@ -33,7 +33,9 @@ html{box-sizing:border-box;font-size:16px}*,:after,:before{box-sizing:inherit;fo
     align-items: center;
     min-width: 100%;
     height: 52px;
-    background-color: rgb(0, 0, 0);
+
+background: rgb(40,40,40);
+background: radial-gradient(circle, rgba(40,40,40,1) 32%, rgba(0,0,0,1) 100%);
   } 
 
   .header-logo{
@@ -61,8 +63,18 @@ html{box-sizing:border-box;font-size:16px}*,:after,:before{box-sizing:inherit;fo
     text-decoration: none;
     font-family: Oswald;
     padding: 5px 10px 5px 10px;
+    
+  }
+  
+  .header-menu-item:hover {
+    color:black;
+    background-color: #FDF6FB;
   }
 
+
+
+
+ 
   footer{
     grid-area: footer;
     margin-top: auto;
@@ -144,8 +156,8 @@ html{box-sizing:border-box;font-size:16px}*,:after,:before{box-sizing:inherit;fo
     flex-direction: column;
     align-items: center;
     height: 100px;
-    background-color: #D299BA ;
- 
+    background: rgb(210,153,176);
+background: linear-gradient(0deg, rgba(210,153,176,1) 32%, rgba(185,109,140,1) 100%);
     padding-top: 10px;
   }
 
