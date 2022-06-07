@@ -1,17 +1,34 @@
+<!--
+-Pagina web realizada para el proyecto web "ATC Cafe".
+-Realizada por RAMIRO MORALES.
+-Año 2022, curso Desarrollo Web.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+
+    <!--Titulo-->
+    <title>ATC | Contacto</title>
+
+    <!--Instalacion de Bootstrap y hojas de estilo-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueryes.css" />
+
+    <!--Favicon-->
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="https://static.wixstatic.com/media/3c5dec_d10a682ce37d4d59837a0f777281d85f%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/3c5dec_d10a682ce37d4d59837a0f777281d85f%7Emv2.png"
+    />
 
     <!--Instalacion de fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,14 +49,17 @@
     />
     <!-------->
   </head>
+
   <body>
+    <!--HEADER-->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
             ><img src="img/icons/ATC_Logo_600.png" alt="" height="40px"
           /></a>
-          <button
+
+          <!--Boton del menu hamburguesa--><button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -53,22 +73,27 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
+                <!--Boton para la seccion "Inicio"-->
                 <a class="nav-link" aria-current="page" href="index.html"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
+                <!--Boton para la seccion "Menú"-->
                 <a class="nav-link" href="menu.html">Menú</a>
               </li>
               <li class="nav-item">
+                <!--Boton para la seccion "Nosotros"-->
                 <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
+                <!--Boton para la seccion "Ubicacion y horario"-->
                 <a class="nav-link" href="ubicacionyhorario.html"
-                  >Ubicacion y Horario</a
+                  >Ubicación y Horario</a
                 >
               </li>
               <li class="nav-item">
+                <!--Boton para la seccion ""-->
                 <a class="nav-link active" href="contacto.html">Contacto</a>
               </li>
             </ul>
@@ -76,134 +101,150 @@
         </div>
       </nav>
     </header>
-    <div class="container formulario">
-      <section class="d-flex justify-content-center align-items-center">
-        <div
-          class="formulario-contacto card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4 p-4"
-        >
-          <div class="mb-4 d-flex justify-content-start align-items-center">
-            <h4><i class="bi bi-chat-left-quote"></i> &nbsp; Contacto</h4>
-          </div>
-          <div class="mb-1">
-            <form id="contacto">
-              <div class="mb-4 d-flex justify-content-between">
-                <div>
-                  <label for="nombre">
-                    <i class="bi bi-person-fill"></i> Nombre</label
+    <!-------------->
+
+    <!--Contenido principal seccion "Contacto"-->
+    <main>
+      <div class="container formulario">
+        <section class="d-flex justify-content-center align-items-center">
+          <div
+            class="formulario-contacto card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4 p-4"
+          >
+            <div class="mb-4 d-flex justify-content-start align-items-center">
+              <h4><i class="bi bi-chat-left-quote"></i> &nbsp; Contacto</h4>
+            </div>
+            <div class="mb-1">
+              <form id="contacto">
+                <div class="mb-4 d-flex justify-content-between">
+                  <div>
+                    <!--Campo de texto para el nombre-->
+                    <label for="nombre">
+                      <i class="bi bi-person-fill"></i> Nombre</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="nombre"
+                      id="nombre"
+                      required
+                    />
+                    <div class="nombre text-danger"></div>
+                  </div>
+                  <div>
+                    <!--Campo de texto para el apellido-->
+                    <label for="apellido">
+                      <i class="bi bi-person-bounding-box"></i> Apellido</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="apellido"
+                      id="apellido"
+                      required
+                    />
+                    <div class="apellido text-danger"></div>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <!--Campo de texto para el correo electronico-->
+                  <label for="correo"
+                    ><i class="bi bi-envelope-fill"></i> Correo</label
                   >
                   <input
-                    type="text"
+                    type="email"
                     class="form-control"
-                    name="nombre"
-                    id="nombre"
+                    name="correo"
+                    id="correo"
                     required
                   />
-                  <div class="nombre text-danger"></div>
+                  <div class="correo text-danger"></div>
                 </div>
-                <div>
-                  <label for="apellido">
-                    <i class="bi bi-person-bounding-box"></i> Apellido</label
+                <div class="mb-4">
+                  <!--Selector para la asistencia a la cafeteria-->
+                  <label for="select_vino_cafe" class="select-vino-cafe">
+                    <p>¿Cada cuanto viene a nuestra cafeteria?</p>
+                    <select name="vino_cafe" id="vino_cafe">
+                      <option value="1">Voy bastante seguido.</option>
+                      <option value="2">Voy cada tanto</option>
+                      <option value="4">No voy hace bastante.</option>
+                      <option value="3">Nunca he ido.</option>
+                    </select></label
                   >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="apellido"
-                    id="apellido"
-                    required
-                  />
-                  <div class="apellido text-danger"></div>
                 </div>
-              </div>
-              <div class="mb-4">
-                <label for="correo"
-                  ><i class="bi bi-envelope-fill"></i> Correo</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  name="correo"
-                  id="correo"
-                  required
-                />
-                <div class="correo text-danger"></div>
-              </div>
-              <div class="mb-4">
-                <label for="select_vino_cafe" class="select-vino-cafe">
-                  <p>¿Cada cuanto viene a nuestra cafeteria?</p>
-                  <select name="vino_cafe" id="vino_cafe">
-                    <option value="1">Voy bastante seguido.</option>
-                    <option value="2">Voy cada tanto</option>
-                    <option value="4">No voy hace bastante.</option>
-                    <option value="3">Nunca he ido.</option>
-                  </select></label
-                >
-              </div>
 
-              <div class="mb-4">
-                <label for="sexo"
-                  ><i class="bi bi-gender-ambiguous"></i> Sexo:
-                </label>
-                <input
-                  type="radio"
-                  class="form-check-input"
-                  name="sexo"
-                  value="masculino"
-                />
-                Masculino
-                <input
-                  type="radio"
-                  class="form-check-input"
-                  name="sexo"
-                  value="femenino"
-                />
-                Femenino
-              </div>
-              <div class="mb-4">
-                <label for="mensaje">
-                  <i class="bi bi-chat-right-dots-fill" required></i>
-                  Mensaje</label
-                >
-                <textarea
-                  name="mensaje"
-                  id="mensaje"
-                  class="form-control"
-                ></textarea>
-                <div class="mensaje text-danger"></div>
-              </div>
-              <div class="mb-4">
-                <label for="terminos">
+                <div class="mb-4">
+                  <!--Selector para el sexo-->
+                  <label for="sexo"
+                    ><i class="bi bi-gender-ambiguous"></i> Sexo:
+                  </label>
                   <input
-                    type="checkbox"
-                    name="terminos_y_condiciones"
-                    id="terminos_y_condiciones"
-                  /><span>Acepto los terminos y condiciones</span>
-                </label>
-              </div>
-              <div class="mb-2">
-                <button
-                  id="botton"
-                  type="reset"
-                  class="col-12 btn btn-secondary d-flex justify-content-between"
-                >
-                  <span>Limpiar </span
-                  ><i id="icono" class="bi bi-cursor-fill"></i>
-                </button>
-              </div>
-              <div class="mb-2">
-                <button
-                  id="botton"
-                  class="col-12 btn btn-primary d-flex justify-content-between"
-                >
-                  <span>Enviar </span
-                  ><i id="icono" class="bi bi-cursor-fill"></i>
-                </button>
-              </div>
-            </form>
+                    type="radio"
+                    class="form-check-input"
+                    name="sexo"
+                    value="masculino"
+                  />
+                  Masculino
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name="sexo"
+                    value="femenino"
+                  />
+                  Femenino
+                </div>
+                <div class="mb-4">
+                  <!--Campo de texto para mensaje a enviar-->
+                  <label for="mensaje">
+                    <i class="bi bi-chat-right-dots-fill" required></i>
+                    Mensaje</label
+                  >
+                  <textarea
+                    name="mensaje"
+                    id="mensaje"
+                    class="form-control"
+                  ></textarea>
+                  <div class="mensaje text-danger"></div>
+                </div>
+                <div class="mb-4">
+                  <!--Checkbox de terminos y condiciones-->
+                  <label for="terminos">
+                    <input
+                      type="checkbox"
+                      name="terminos_y_condiciones"
+                      id="terminos_y_condiciones"
+                    /><span>Acepto los terminos y condiciones</span>
+                  </label>
+                </div>
+                <div class="mb-2">
+                  <!--Boton de reset del formulario-->
+                  <button
+                    id="botton"
+                    type="reset"
+                    class="col-12 btn btn-secondary d-flex justify-content-between"
+                  >
+                    <span>Limpiar </span
+                    ><i id="icono" class="bi bi-cursor-fill"></i>
+                  </button>
+                </div>
+                <div class="mb-2">
+                  <!--Boton para enviar la informacion del formulario-->
+                  <button
+                    id="botton"
+                    class="col-12 btn btn-primary d-flex justify-content-between"
+                  >
+                    <span>Enviar </span
+                    ><i id="icono" class="bi bi-cursor-fill"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </main>
+    <!------------>
 
+    <!--FOOTER-->
     <footer>
       <div class="container-fluid row" width="100">
         <div class="col-lg-4 col-xl-4 col-xxl-4">
@@ -219,8 +260,9 @@
           />
         </div>
         <div class="col-6 col-lg-4 col-xl-4 col-xxl-4 footer-logos-container">
+          <!--Enlaces a las redes sociales de "ATC"-->
           <div class="footer-logos">
-            <a
+            <!--WhatsApp--><a
               href="https://api.whatsapp.com/send/?phone=542235794342&text&app_absent=0"
               target="blank"
               ><img
@@ -228,13 +270,17 @@
                 alt="whatsapp"
                 class="footer-logo"
             /></a>
-            <a href="https://www.instagram.com/acatomamoscafe/" target="blank"
+            <!--Instagram--><a
+              href="https://www.instagram.com/acatomamoscafe/"
+              target="blank"
               ><img
                 src="img/icons/instagram.png"
                 alt="instagram"
                 class="footer-logo"
             /></a>
-            <a href=" https://www.facebook.com/acatomamoscafe" target="blank"
+            <!--Facebook--><a
+              href=" https://www.facebook.com/acatomamoscafe"
+              target="blank"
               ><img
                 src="img/icons/facebook.png"
                 alt="facebook"
@@ -244,10 +290,14 @@
         </div>
       </div>
     </footer>
+    <!-------------->
+
+    <!--Scripts-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <!-------------->
   </body>
 </html>
