@@ -1,0 +1,47 @@
+/*Ubicacionyhorario.html*/
+
+/*Variables*/@import "library";
+
+.ubicacion-horario-main-content{
+  @include margenes-arriba-abajo (10px, 90px);
+  text-align: center;
+  }
+
+  .ubicacion-info{
+    color: map-get($colores,blanco);
+    font-family: poppins;
+    justify-content: center;
+  }
+
+  .ubicacion-info span{
+    font-size: 30px;
+  }
+  .ubicacion-imagen-fachada {
+    width: 15vw;
+    margin-top: 20px;
+    border: 4px solid map-get($colores,negro);
+    box-shadow: 7px 7px map-get($colores,gris);
+}
+
+  .mapa{
+    width: 370px;
+    margin-right: 25px;
+    border: 4px solid map-get($colores,negro);
+  }
+
+  .horario-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tabla-horario{
+    margin-top: 10px;
+    text-align: center;
+    color: map-get($colores,negro);
+    background-color: map-get($colores,blanco);
+    border: 4px solid map-get($colores,negro);
+    width: 350px;
+  }
+/*----------*/
