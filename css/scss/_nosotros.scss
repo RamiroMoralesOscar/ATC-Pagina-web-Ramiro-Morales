@@ -1,6 +1,7 @@
 /*Nosotros.html*/
 
-/*Variables*/@import "library";
+/*Variables*/
+@import "library";
 
 .nosotros-content {
   min-width: 100%;
@@ -28,7 +29,7 @@
   }
 
   height: 350px;
-  border: 1px solid map-get($colores,blanco);
+  border: 1px solid map-get($colores, blanco);
   ;
   margin: 0px 20px 0px 0px;
 }
@@ -39,14 +40,15 @@
     column-start: 2;
     column-end: 4;
   }
-  font:
-  {
-    family:  poppins;
+
+  font: {
+    family: poppins;
     size: 20px;
-  } 
+  }
+
   width: 600px;
   color: #FDF6FB;
-  text-shadow: 2px 2px 2px map-get($colores,negro);
+  text-shadow: 2px 2px 2px map-get($colores, negro);
   justify-self: start;
 }
 
@@ -54,8 +56,8 @@
 .nosotros-main-imagen-cafe-b,
 .nosotros-main-imagen-cafe-c {
   height: 190px;
-  margin: 0px 15px 0px 15px;
-  border: 1px solid map-get($colores,blanco);
+  margin: 0px 2vh 0px 2vh;
+  border: 1px solid map-get($colores, blanco);
   ;
 }
 
