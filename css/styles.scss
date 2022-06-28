@@ -1,24 +1,410 @@
+@charset "UTF-8";
 /*
 Hoja de Estilo para el proyecto web "ATC Cafe"
 Realizada por RAMIRO MORALES
 año 2022
 */
+/*Index.html*/
+/*Variables*/
+/*Variables*/
+/*Colores*/
+.img-con-shadow, .img-con-shadow--gris, .img-con-shadow--blanco {
+  -webkit-box-shadow: 7px 7px #161616;
+          box-shadow: 7px 7px #161616;
+}
 
-//Importacion de hojas de estilo externas
+.img-con-shadow--gris {
+  -webkit-box-shadow: 7px 7px #5f5e5e;
+          box-shadow: 7px 7px #5f5e5e;
+}
 
-@import "scss/index";
-@import "scss/menu";
-@import "scss/nosotros";
-@import "scss/ubicacionyhorario";
-@import "scss/contacto";
+.img-con-shadow--blanco {
+  -webkit-box-shadow: 7px 7px aliceblue;
+          box-shadow: 7px 7px aliceblue;
+}
 
-//Libreria
-@import "scss/library";
+.texto_wavy {
+  text-decoration: underline;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+  -webkit-text-decoration-color: #d299b0;
+          text-decoration-color: #d299b0;
+}
 
-//CSS
+.index-download-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  background: #d299b0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(32%, #d299b0), to(#b96d8c));
+  background: linear-gradient(0deg, #d299b0 32%, #b96d8c 100%);
+  color: aliceblue;
+  border: 2px solid aliceblue;
+  padding-top: 10px;
+}
+
+.index-download-menu a {
+  border: 2px solid black;
+  background-color: aliceblue;
+  color: black;
+  padding: 6px 6px 0px 6px;
+}
+
+.super-baristas {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.super-baristas-image {
+  width: 350px;
+}
+
+.baristas img {
+  border-radius: 15px;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.animated_text {
+  text-decoration: none;
+  position: relative;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  color: aliceblue;
+  line-height: 2;
+}
+
+/*-----------*/
+/*Menú.html*/
+/*Variables*/
+/*Variables*/
+/*Colores*/
+.img-con-shadow, .img-con-shadow--gris, .img-con-shadow--blanco {
+  -webkit-box-shadow: 7px 7px #161616;
+          box-shadow: 7px 7px #161616;
+}
+
+.img-con-shadow--gris {
+  -webkit-box-shadow: 7px 7px #5f5e5e;
+          box-shadow: 7px 7px #5f5e5e;
+}
+
+.img-con-shadow--blanco {
+  -webkit-box-shadow: 7px 7px aliceblue;
+          box-shadow: 7px 7px aliceblue;
+}
+
+.texto_wavy {
+  text-decoration: underline;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+  -webkit-text-decoration-color: #d299b0;
+          text-decoration-color: #d299b0;
+}
+
+.menu-content-title {
+  font-family: Poppins;
+  font-size: 30px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.pdf-view {
+  margin-bottom: 15px;
+  display: block;
+  width: 400px;
+  height: 80vh;
+  border-radius: 20px;
+}
+
+/*----------*/
+/*Nosotros.html*/
+/*Variables*/
+/*Variables*/
+/*Colores*/
+.img-con-shadow, .img-con-shadow--gris, .img-con-shadow--blanco {
+  -webkit-box-shadow: 7px 7px #161616;
+          box-shadow: 7px 7px #161616;
+}
+
+.img-con-shadow--gris {
+  -webkit-box-shadow: 7px 7px #5f5e5e;
+          box-shadow: 7px 7px #5f5e5e;
+}
+
+.img-con-shadow--blanco {
+  -webkit-box-shadow: 7px 7px aliceblue;
+          box-shadow: 7px 7px aliceblue;
+}
+
+.texto_wavy {
+  text-decoration: underline;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+  -webkit-text-decoration-color: #d299b0;
+          text-decoration-color: #d299b0;
+}
+
+.nosotros-content {
+  min-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+  justify-items: center;
+  margin-top: 15px;
+  row-gap: 20px;
+}
+
+.nosotros-main-imagen-fachada {
+  justify-self: flex-end;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  height: 350px;
+  border: 1px solid aliceblue;
+  margin: 0px 20px 0px 0px;
+}
+
+.nosotros-main-text {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+  font-family: poppins;
+  font-size: 20px;
+  width: 600px;
+  color: #FDF6FB;
+  text-shadow: 2px 2px 2px #161616;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.nosotros-content .nosotros-main-imagen-cafe-a,
+.nosotros-main-imagen-cafe-b,
+.nosotros-main-imagen-cafe-c {
+  height: 190px;
+  margin: 0px 15px 0px 15px;
+  border: 1px solid aliceblue;
+}
+
+.nosotros-main-imagen-cafe-a {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.nosotros-main-imagen-cafe-b {
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.nosotros-main-imagen-cafe-c {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+/*-------------*/
+/*Ubicacionyhorario.html*/
+/*Variables*/
+/*Variables*/
+/*Colores*/
+.img-con-shadow, .img-con-shadow--gris, .img-con-shadow--blanco {
+  -webkit-box-shadow: 7px 7px #161616;
+          box-shadow: 7px 7px #161616;
+}
+
+.img-con-shadow--gris {
+  -webkit-box-shadow: 7px 7px #5f5e5e;
+          box-shadow: 7px 7px #5f5e5e;
+}
+
+.img-con-shadow--blanco {
+  -webkit-box-shadow: 7px 7px aliceblue;
+          box-shadow: 7px 7px aliceblue;
+}
+
+.texto_wavy {
+  text-decoration: underline;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+  -webkit-text-decoration-color: #d299b0;
+          text-decoration-color: #d299b0;
+}
+
+.ubicacion-horario-main-content {
+  margin-top: 10px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.ubicacion-info {
+  color: aliceblue;
+  font-family: poppins;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ubicacion-info span {
+  font-size: 30px;
+}
+
+.ubicacion-imagen-fachada {
+  width: 15vw;
+  margin-top: 20px;
+  border: 4px solid #161616;
+  -webkit-box-shadow: 7px 7px #5f5e5e;
+          box-shadow: 7px 7px #5f5e5e;
+}
+
+.mapa {
+  width: 370px;
+  margin-right: 25px;
+  border: 4px solid #161616;
+}
+
+.horario-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tabla-horario {
+  margin-top: 10px;
+  text-align: center;
+  color: #161616;
+  background-color: aliceblue;
+  border: 4px solid #161616;
+  width: 350px;
+}
+
+/*----------*/
+/*Contacto.html*/
+/*Variables*/
+/*Variables*/
+/*Colores*/
+.img-con-shadow, .img-con-shadow--gris, .img-con-shadow--blanco {
+  -webkit-box-shadow: 7px 7px #161616;
+          box-shadow: 7px 7px #161616;
+}
+
+.img-con-shadow--gris {
+  -webkit-box-shadow: 7px 7px #5f5e5e;
+          box-shadow: 7px 7px #5f5e5e;
+}
+
+.img-con-shadow--blanco {
+  -webkit-box-shadow: 7px 7px aliceblue;
+          box-shadow: 7px 7px aliceblue;
+}
+
+.texto_wavy {
+  text-decoration: underline;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+  -webkit-text-decoration-color: #d299b0;
+          text-decoration-color: #d299b0;
+}
+
+.contacto-content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formulario-contacto {
+  background-color: rgba(32, 30, 30, 0.589);
+}
+
+.formulario {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.select-vino-cafe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*----------*/
+/*Variables*/
+/*Colores*/
+.img-con-shadow, .img-con-shadow--gris, .img-con-shadow--blanco {
+  -webkit-box-shadow: 7px 7px #161616;
+          box-shadow: 7px 7px #161616;
+}
+
+.img-con-shadow--gris {
+  -webkit-box-shadow: 7px 7px #5f5e5e;
+          box-shadow: 7px 7px #5f5e5e;
+}
+
+.img-con-shadow--blanco {
+  -webkit-box-shadow: 7px 7px aliceblue;
+          box-shadow: 7px 7px aliceblue;
+}
+
+.texto_wavy {
+  text-decoration: underline;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+  -webkit-text-decoration-color: #d299b0;
+          text-decoration-color: #d299b0;
+}
 
 /*Estilos que se aplicaran en todo el proyecto*/
 body {
+<<<<<<< HEAD
   background: {
     image: url(../img/background.jpg);
     size: cover;
@@ -26,21 +412,53 @@ body {
   }
 
   color: map-get($colores, blanco);
+=======
+  background-image: url(../img/background.png);
+  background-size: cover;
+  background-min-height: 100vh;
+  color: aliceblue;
+>>>>>>> 846271debcf4c76375fd48981867af4d1eaa8c36
   min-height: 100vh;
+}
 
-  li {
-    list-style: none;
-  }
+body li {
+  list-style: none;
 }
 
 footer {
+<<<<<<< HEAD
   @include margenes-arriba-abajo (auto, none);
 
+=======
+  margin-top: auto;
+  margin-bottom: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/footer-background.jpg);
+>>>>>>> 846271debcf4c76375fd48981867af4d1eaa8c36
 }
 
 .footer-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   justify-content: flex-end;
+=======
+  margin-right: 15px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+>>>>>>> 846271debcf4c76375fd48981867af4d1eaa8c36
 }
 
 .footer-logo {
@@ -49,13 +467,20 @@ footer {
 }
 
 .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .center-grid {
+  display: -ms-grid;
   display: grid;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer-logo-atc {
@@ -66,10 +491,10 @@ footer {
 .footer-text {
   margin-left: 30px;
   width: 120px;
-  color: map-get($colores, blanco);
-  background-color: map-get($colores, negro);
+  color: aliceblue;
+  background-color: #161616;
   font-family: OSwald;
-  border: 2px solid map-get($colores, blanco);
+  border: 2px solid aliceblue;
   padding: 3px 7px 3px 7px;
 }
 
@@ -78,6 +503,7 @@ footer {
 }
 
 /*----------------*/
+<<<<<<< HEAD
 
 
 /*Media Queryes*/
@@ -102,12 +528,21 @@ footer {
     margin-left: 5px;
   }
 }
+=======
+/*# sourceMappingURL=styles.css.map */
+
+
+
+/*Media Queryes*/
+
+>>>>>>> 846271debcf4c76375fd48981867af4d1eaa8c36
 
 /*Estilos que se aplicaran si la la resolucion del dispositivo es menor a 992px*/
 @media screen and (max-width: 992px) {
   .copyright {
     display: none;
   }
+<<<<<<< HEAD
 
   .footer-logo-atc-container {
     justify-content: flex-start;
@@ -117,15 +552,29 @@ footer {
     justify-content: flex-end;
   }
 
+=======
+  .footer-logo-atc-container {
+    justify-content: flex-start;
+  }
+  .footer-logos-container {
+    justify-content: flex-end;
+  }
+>>>>>>> 846271debcf4c76375fd48981867af4d1eaa8c36
   /*Nosotros.html*/
   .nosotros-main-imagen-fachada {
     display: none;
   }
+<<<<<<< HEAD
 
   .nosotros-content {
     row-gap: 2vh;
   }
 
+=======
+  .nosotros-content {
+    row-gap: 2vh;
+  }
+>>>>>>> 846271debcf4c76375fd48981867af4d1eaa8c36
   .nosotros-main-text {
     width: 45vw;
     font-size: 15px;
@@ -146,17 +595,24 @@ footer {
     justify-self: center;
     align-self: center;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 846271debcf4c76375fd48981867af4d1eaa8c36
   .nosotros-main-imagen-cafe-b {
     grid-row: 2;
     grid-column: 1;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 846271debcf4c76375fd48981867af4d1eaa8c36
   .nosotros-main-imagen-cafe-c {
     grid-row: 2;
     grid-column: 2;
     justify-self: center;
   }
+<<<<<<< HEAD
 
   .footer-logo {
     height: 6.2vh;
@@ -167,6 +623,9 @@ footer {
   }
 }
 
+=======
+}
+>>>>>>> 846271debcf4c76375fd48981867af4d1eaa8c36
 /*-----------*/
 
 /*Estilos que se aplicaran si la la resolucion del dispositivo es menor a 768px*/
@@ -174,6 +633,7 @@ footer {
   .ubicacion-info {
     align-content: center;
   }
+<<<<<<< HEAD
 
   .footer-logo {
     height: 5vh;
@@ -184,6 +644,9 @@ footer {
   }
 }
 
+=======
+}
+>>>>>>> 846271debcf4c76375fd48981867af4d1eaa8c36
 /*-----------*/
 
 /*Estilos que se aplicaran si la la resolucion del dispositivo es menor a 576px*/
@@ -191,6 +654,7 @@ footer {
   .super-baristas-image {
     width: 90vw;
   }
+<<<<<<< HEAD
 
   .baristas img {
     width: 50vw;
@@ -208,6 +672,20 @@ footer {
     row-gap: 2vh;
   }
 
+=======
+  .baristas img {
+    width: 50vw;
+  }
+  .pdf-view {
+    min-width: 90vw;
+  }
+  .nosotros-main-imagen-fachada {
+    display: none;
+  }
+  .nosotros-content {
+    row-gap: 2vh;
+  }
+>>>>>>> 846271debcf4c76375fd48981867af4d1eaa8c36
   .nosotros-main-text {
     width: 90vw;
     font-size: 15px;
@@ -227,19 +705,26 @@ footer {
     grid-column-end: 3;
     justify-self: center;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 846271debcf4c76375fd48981867af4d1eaa8c36
   .nosotros-main-imagen-cafe-b {
     grid-row: 3;
     grid-column-start: 2;
     grid-column-end: 3;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 846271debcf4c76375fd48981867af4d1eaa8c36
   .nosotros-main-imagen-cafe-c {
     grid-row: 4;
     grid-column-start: 2;
     grid-column-end: 3;
     justify-self: center;
   }
+<<<<<<< HEAD
 }
 
 @media screen and (max-width: 1200px) and (min-width: 992px) {
@@ -257,3 +742,8 @@ footer {
 }
 
 /*-------*/
+=======
+
+  /*-------*/
+}
+>>>>>>> 846271debcf4c76375fd48981867af4d1eaa8c36
