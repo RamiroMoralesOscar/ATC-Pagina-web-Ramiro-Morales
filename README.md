@@ -19,7 +19,7 @@
 <h3 align="center">ATC PAGINA - CoderHouse Project</h3>
 
   <p align="center">
-    project_description
+    Project carried out for the CoderHouse web development course, in which I applied basic practices and technologies. It was a very entertaining project to do and allowed me to gain ease when it comes to writing code and making new projects. This is just the beginning.
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
