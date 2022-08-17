@@ -1,0 +1,77 @@
+/*Nosotros.html*/
+
+/*Variables*/@import "library";
+
+.nosotros-content {
+  min-width: 100%;
+  display: grid;
+
+  grid-template: {
+    columns: repeat(3, auto);
+    rows: repeat(5, auto);
+  }
+
+  ;
+
+  justify-items: center;
+  margin-top: 15px;
+  row-gap: 20px;
+
+}
+
+.nosotros-main-imagen-fachada {
+  justify-self: flex-end;
+
+  grid: {
+    column: 1;
+    row: 1;
+  }
+
+  height: 350px;
+  border: 1px solid map-get($colores,blanco);
+  ;
+  margin: 0px 20px 0px 0px;
+}
+
+.nosotros-main-text {
+  grid: {
+    row: 1;
+    column-start: 2;
+    column-end: 4;
+  }
+  font:
+  {
+    family:  poppins;
+    size: 20px;
+  } 
+  width: 600px;
+  color: #FDF6FB;
+  text-shadow: 2px 2px 2px map-get($colores,negro);
+  justify-self: start;
+}
+
+.nosotros-content .nosotros-main-imagen-cafe-a,
+.nosotros-main-imagen-cafe-b,
+.nosotros-main-imagen-cafe-c {
+  height: 190px;
+  margin: 0px 15px 0px 15px;
+  border: 1px solid map-get($colores,blanco);
+  
+  ;
+}
+
+.nosotros-main-imagen-cafe-a {
+  grid-row: 2;
+  justify-self: end;
+}
+
+.nosotros-main-imagen-cafe-b {
+  grid-row: 2;
+}
+
+.nosotros-main-imagen-cafe-c {
+  grid-row: 2;
+  justify-self: start;
+}
+
+/*-------------*/

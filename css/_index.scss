@@ -1,0 +1,124 @@
+/*Index.html*/
+
+/*Variables*/@import "library";
+
+.index-download-menu{
+    display: flex;
+    width: 90vw;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    background: map-get($colores,rosa);
+    background: linear-gradient(0deg, map-get($colores,rosa) 32%, rgba(185,109,140,1) 100%);
+    color: map-get($colores,blanco);
+    border: 2px solid map-get($colores,blanco);
+    padding-top: 10px;
+  }
+  
+  .index-download-menu a{
+    border: 2px solid black;
+    background-color: map-get($colores,blanco);
+    color: black;
+    padding: 6px 6px 0px 6px;
+  }
+  
+  .super-baristas{
+    display: grid;
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .super-baristas-image{
+    width: 350px;
+  }
+  
+  .baristas img{
+    border-radius: 15px;
+    width: 250px;
+    margin-bottom: 20px;
+  }
+
+  //Animacion texto ATC-Aca Tomamos Café index
+
+// #D92525 -- red
+// #F25C05 -- orange
+// #88A61B -- green
+// #0E3D59 -- blue
+// #572D8C -- purple
+// $color: #D92525;
+// $color2: #F25C05;
+// $color3: #88A61B;
+// $color4: #0E3D59;
+// $color5: #572D8C;
+
+// Grays
+$color: #D79EBC;
+$color2: #EBE462;
+$color3: #C73D3A;
+$color4: #2D3C7F;
+$color5: #278358;
+
+
+@function makelongshadow($color, $color2, $color3, $color4, $color5) {
+  $val: 0px 0px $color;
+  @for $i from 1 through 20 {
+    $val: #{$val}, -#{$i}px #{$i}px #{$color};
+  }
+  @for $i from 21 through 40 {
+    $val: #{$val}, -#{$i}px #{$i}px #{$color2};
+  }
+  @for $i from 41 through 60 {
+    $val: #{$val}, -#{$i}px #{$i}px #{$color3};
+  }
+  @for $i from 61 through 80 {
+    $val: #{$val}, -#{$i}px #{$i}px #{$color4};
+  }
+  @for $i from 81 through 100 {
+    $val: #{$val}, -#{$i}px #{$i}px #{$color5};
+  }
+  @return $val;
+}
+
+@keyframes animateShadow {
+  0%   {
+    text-shadow: makelongshadow($color, $color2, $color3, $color4, $color5);
+  }
+  20%  {
+    text-shadow: makelongshadow($color2, $color3, $color4, $color5, $color);
+  }
+  40%  {
+    text-shadow: makelongshadow($color3, $color4, $color5, $color, $color2);
+  }
+  60% {
+    text-shadow: makelongshadow($color4, $color5, $color, $color2, $color3);
+  }
+  80% {
+    text-shadow: makelongshadow($color5, $color, $color2, $color3, $color4);
+  }
+  100% {
+    text-shadow: makelongshadow($color, $color2, $color3, $color4, $color5);
+  }
+}
+
+
+.animated_text {
+	padding : 45px;
+	overflow:hidden;
+	margin: 0px auto;
+	width: 85vw;
+	font-weight: 600;
+	line-height: 0.8;
+	font-size: 100px;
+	text-align: center;
+	font-size: 4rem;
+	color: #ffffff;
+	font-family: 'Poppins';
+	text-shadow: makelongshadow($color, $color2, $color3, $color4, $color5);
+  animation-name: animateShadow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  margin-bottom: 10px;
+}
+
+
+  /*-----------*/

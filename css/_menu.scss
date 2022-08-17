@@ -1,0 +1,22 @@
+/*Menú.html*/
+
+/*Variables*/@import "library";
+
+.menu-content-title {
+    font: {
+        family: Poppins;
+        size: 30px;
+    }
+    text-align: center;
+    color: map-get($colores,blanco);
+}
+
+.pdf-view {
+    margin-bottom: 15px;
+    display: block;
+    width: 400px;
+    height: 80vh;
+    border-radius: 20px;
+}
+
+/*----------*/

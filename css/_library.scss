@@ -1,0 +1,33 @@
+/*Variables*/
+
+/*Colores*/
+
+//Maps
+$colores:(
+blanco:rgb(240, 248, 255),
+rosa: rgb(210,153,176),
+negro: rgb(22, 22, 22),
+gris: rgb(95, 94, 94)
+); 
+//
+
+//Extend
+.img-con-shadow{
+    box-shadow: 7px 7px map-get($colores,negro);
+  }
+  .img-con-shadow--gris{
+    @extend .img-con-shadow;
+    box-shadow: 7px 7px map-get($colores,gris);
+  }
+  .img-con-shadow--blanco{
+    @extend .img-con-shadow;
+    box-shadow: 7px 7px map-get($colores,blanco);
+  }
+  //
+  
+  //Mixin
+  @mixin margenes-arriba-abajo ($margin_arriba, $margin_abajo){
+      margin-top: $margin_arriba;
+      margin-bottom: $margin_abajo;
+  }
+  //
